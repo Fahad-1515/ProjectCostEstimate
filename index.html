@@ -336,14 +336,21 @@ footer ul {
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 animate__animated animate__fadeInLeft">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                        AI-Powered <span class="text-accent">Project Cost</span> Estimation
-                    </h1>
+<!-- Hero Section -->
+<section id="home" class="relative pt-28 pb-20 md:pt-36 md:pb-28 lg:pt-44 lg:pb-32 gradient-bg text-white overflow-hidden">
+    <!-- Animated background elements -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+        <div class="absolute top-1/4 -left-20 w-64 h-64 bg-accent rounded-full mix-blend-overlay filter blur-3xl animate-float animation-delay-2000"></div>
+        <div class="absolute bottom-1/3 -right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-overlay filter blur-3xl animate-float animation-delay-3000"></div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+            <!-- Text Content - All text elements now have transparent backgrounds -->
+            <div class="md:w-1/2 mb-12 md:mb-0 animate__animated animate__fadeInLeft">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 bg-transparent">
+                    AI-Powered <span class="text-accent drop-shadow-lg bg-transparent">Project Cost</span> Estimation
+                </h1>
                     <p class="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed">
                         Accurate cost predictions using machine learning to eliminate budget overruns and optimize resource allocation.
                     </p>
